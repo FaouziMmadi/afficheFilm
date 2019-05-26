@@ -1,134 +1,255 @@
-/* ------RESET------ */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd,fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video
-/* ,ol, ul, li */
- {
-  margin: 0;
-  padding: 0;
-}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    header {
+        margin: auto;
+        text-align: center;
+    }
+
+    div.profile {
+        margin: auto;
+    }
+
+    header img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
 
-body {
-   width: 100%;
-   height: 100%;
-   background-image: url("../image/conjuring.jpg");
-   background-size: contain;
-   background-repeat: no-repeat;
-   background-position: center;
+    .contact,
+    .resume {
+        text-align: center;
+        margin-bottom: 9px;
+    }
 
-
+    aside {
+        margin-top: 20px;
+    }
 
 }
 
-@font-face {
-    font-family:"Cinzel-Black";
-    src: url("../fonts/Cinzel-Black.ttf");
-}
-@font-face {
-    font-family:"Cinzel-Bold";
-    src: url("../fonts/Cinzel-Bold.ttf");
-}
-@font-face {
-    font-family:"Cinzel-Regular";
-    src: url("../fonts/Cinzel-Regular.ttf");
-}
-@font-face {
-    font-family:"TrajanusBricks";
-    src: url("../fonts/TrajanusBricks.ttf");
-}
-@font-face {
-    font-family:"Karma_Loo_demoTTF";
-    src: url("../fonts/Karma_Loo_demoTTF.ttf");
+
+.bg {
+    /* background-color:  #dddddd; */
+    background-color: #a3a3a385;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239a9a9a' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 
 
-.container {
-  width: 100%;
-  height: 1170px;
+header {
+    background: #003740f7;
+    border-bottom: 3px solid black;
+
 
 }
 
-::-moz-selection {
-  color: white;
-  background: #CEF7A0;
-}
-::selection {
-  color: white;
-  background: #CEF7A0;
+
+
+.title {
+    color: #eeeeee;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+
 }
 
 h1 {
-  top: auto;
-  text-align: center;
-  font-size: 75px;
-  letter-spacing: -18px;
-  font-family:"TrajanusBricks";
-  padding-top: 70px;
+  text-shadow: 3px 3px 10px black;
 }
 
-h2 {
-  text-align: center;
-  font-size: 25px;
-  margin: -25px 0;
-  margin-left: 260px;
-  letter-spacing: -2px;
+h2.occupation {
+    color: #bfbfbf;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    font-size: 17px;
 
 }
 
-h3 {
-  text-align: center;
-  font-size: 22px;
-  font-family:"TrajanusBricks";
-  color: white;
-  bottom: 20px;
-  letter-spacing: -3px;
+.subtitle {
+    color: #eeeeee;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
 }
 
-h4 {
-  color: white;
-  font-size: 22px;
-  font-family:"TrajanusBricks";
-  position: absolute;
-  width: 100%;
-  bottom: -170px;
-  right: 150px;
+
+ul {
+    padding-left: 0;
 }
 
-h5 {
-  position: absolute;
-  width: 100%;
-  bottom: -130px;
-  right: -50px;
-  color: white;
-  font-size: 15px;
-  font-family:"Karma_Loo_demoTTF";
-  text-align: center;
-  letter-spacing:-15;
+ul.social li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+ul.social li i {
+    font-size: 36px;
 
 }
 
 
-p {
-  text-align: center;
-  font-size: 20px;
-  padding-top: 20px;
-  letter-spacing: 3px;
+.social li a i:hover {
+    color: white;
 }
 
-.bas {
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  bottom: -362px;
-  right: 90px;
+a.resume {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    border: 0.5px solid white;
+
+
+}
+
+a.contact,
+button.send {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+
+
+}
+
+div.modal h4,
+input {
+    font-family: 'Fira Sans', sans-serif;
+
+}
+
+div.md-form i {
+    color: #131313;
+}
+
+a.contact:hover {
+    background: white;
+    color: #c62b29;
+}
+
+a.resume:hover {
+    background: white;
+    color: black;
+}
+
+.bg_red {
+    background-color: #0c8a9e;
+}
+
+.color_red {
+    color: #0c8a9e;
+}
+
+div.about {
+    background: #0c8a9e;
+    color: #eeeeee;
+}
+
+div.about p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+div.about a {
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+aside {
+    /*    background: #131313;*/
+    color: #bbbbbb;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 200;
+    /*    box-shadow: 4px 4px 2px 1px rgba(37, 37, 37, 0.137);*/
+}
+
+aside ul li {
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+
+
+}
+
+aside ul li i {
+    color: #eeeeee;
+    margin-right: 5px;
+}
+
+aside i {
+    color: #9a9a9a;
+    margin-right: 3px;
+}
+
+div.education {
+    background: #0c8a9e;
+    color: white;
+}
+
+div.education a {
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+div.education i {
+    color: white;
+}
+
+div.bg_black {
+    background: #003740f7;
+}
+
+.title-dark {
+    color: #303030;
+}
+
+small {
+    color: #787878;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 200;
+}
+
+.portfolio-item p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #303030;
+
+}
+
+.btn-viewmore {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    color: white;
+
+}
+
+.btn-viewmore:hover {
+    background: black;
+    color: white;
+
+}
+
+.shadow {
+    box-shadow: 4px 4px 2px 1px rgba(37, 37, 37, 0.9);
+
+}
+
+strong {
+    font-weight: 600;
+}
+
+label {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    color: #303030;
+}
+
+span {
+    color: #eeeeee;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.img {
+max-width: 100%;
+height: 135px;
+border-radius: 100px;
 }
